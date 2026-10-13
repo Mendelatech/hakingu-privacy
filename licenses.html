@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hakingu — Open Source Licenses</title>
+<link rel="icon" href="saibi-logo.png">
+<style>
+  body { font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #1a1a1a; }
+  h1 { font-size: 1.6rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.1rem; margin-top: 2.25rem; border-bottom: 1px solid #eee; padding-bottom: 0.25rem; }
+  .updated, .intro { color: #444; font-size: 0.95rem; }
+  a { color: #1f7ae0; }
+  footer { margin-top: 3rem; color: #888; font-size: 0.85rem; }
+  table { width: 100%; border-collapse: collapse; margin-top: 0.5rem; font-size: 0.92rem; }
+  td, th { text-align: left; padding: 6px 8px; border-bottom: 1px solid #eee; vertical-align: top; }
+  th { color: #666; font-weight: 600; }
+  .site-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+  .site-header img { width: 44px; height: 44px; border-radius: 50%; display: block; }
+  .back-link { display: inline-block; margin-top: 1.5rem; }
+</style>
+</head>
+<body>
+  <div class="site-header">
+    <img src="mendelatech-chibi.png" alt="Mendelatech" width="44" height="44">
+    <a href="index.html">← Privacy Policy</a>
+  </div>
+
+  <h1>Open Source Licenses — Hakingu</h1>
+  <p class="updated">Last updated: October 13, 2026</p>
+  <p class="intro">Hakingu is built with the help of the following open source libraries. We're grateful to their authors and maintainers. Each one is used under the terms of its own license, linked below.</p>
+
+  <h2>Apache License 2.0</h2>
+  <table>
+    <tr><th>Library</th><th>Purpose in Hakingu</th></tr>
+    <tr><td>sshj (Jeroen van Erp and contributors)</td><td>The SSH engine: connections, authentication, the interactive shell, SFTP and port forwarding.</td></tr>
+    <tr><td>Kotlin standard library, Kotlin Coroutines, Kotlin Serialization (JetBrains)</td><td>Language runtime, asynchronous work and saving of profiles/keys metadata.</td></tr>
+    <tr><td>AndroidX Core, AppCompat, Activity, Fragment, Lifecycle, Biometric (Google / AOSP)</td><td>App foundation, the biometric app lock and lifecycle handling.</td></tr>
+    <tr><td>AndroidX Compose — UI, Material 3, Material Icons Extended (Google / AOSP)</td><td>The entire user interface.</td></tr>
+    <tr><td>Material Components for Android (Google)</td><td>Theming and UI components.</td></tr>
+    <tr><td>ZXing core (ZXing authors)</td><td>Generating and decoding QR codes.</td></tr>
+    <tr><td>Android NDK — bionic C library (AOSP)</td><td>Statically linked into the bundled native tool (hkexec).</td></tr>
+  </table>
+  <p><a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noopener">Full text of the Apache License 2.0</a></p>
+
+  <h2>MIT License</h2>
+  <table>
+    <tr><th>Library</th><th>Purpose in Hakingu</th></tr>
+    <tr><td>Bouncy Castle (Legion of the Bouncy Castle)</td><td>Cryptography backing SSH key generation and host-key handling (bcprov / bcpkix).</td></tr>
+    <tr><td>SLF4J (QOS.ch)</td><td>Logging facade required by sshj (bound to a no-op implementation).</td></tr>
+  </table>
+  <p><a href="https://www.bouncycastle.org/about/license/" target="_blank" rel="noopener">Bouncy Castle license</a> · <a href="https://www.slf4j.org/license.html" target="_blank" rel="noopener">SLF4J license</a></p>
+
+  <h2>ISC License</h2>
+  <table>
+    <tr><th>Library</th><th>Purpose in Hakingu</th></tr>
+    <tr><td>jBCrypt (Damien Miller)</td><td>bcrypt password hashing and verification in the hash tools.</td></tr>
+  </table>
+  <p><a href="https://github.com/djmdjm/jBCrypt/blob/master/LICENSE" target="_blank" rel="noopener">jBCrypt license</a></p>
+
+  <a class="back-link" href="index.html">← Back to the Privacy Policy</a>
+  <footer>Hakingu — developed by Mendelatech</footer>
+</body>
+</html>
